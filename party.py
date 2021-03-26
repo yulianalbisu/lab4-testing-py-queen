@@ -13,6 +13,10 @@ def is_mel(name, email):
         False
         >>> is_mel('Mel Melitpolski', 'mel@ubermelon.com')
         True
+        >>> is_mel('Mel Melitpolski', 'judith@awesome.com')
+        True
+        >>> is_mel('Judith Butler', 'mel@ubermelon.com')
+        True
         
     """
        
@@ -34,7 +38,9 @@ def most_and_least_common_type(treats):
     >>> treats2 = [{'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}]
     >>> most_and_least_common_type(treats2)
     ('dessert', 'dessert')
-
+    >>> treats3 = [{'type': 'dessert'}, {'type': 'dessert'}, {'type': 'dessert'}, {'type': 'salad'}, {'type': 'salad'}, {'type': 'salad'}]
+    >>> most_and_least_common_type(treats3)
+    ('dessert', 'dessert')
     """
 
     types = {}
